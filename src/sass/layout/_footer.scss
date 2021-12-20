@@ -1,0 +1,61 @@
+.footer {
+  background-color: #e5e5e5;
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+.footer__text-wrapper {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: unset;
+  }
+}
+.footer-text {
+  color: #545454;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+}
+.footer__text-position {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
+.footer__link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.footer__text-svg {
+  animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.25) translateX(5%) translateY(5%);
+  }
+  40% {
+    transform: scale(1.5) translateX(9%) translateY(10%);
+  }
+}

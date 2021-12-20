@@ -1,0 +1,73 @@
+#sign-up {
+  z-index: 1;
+}
+#sign-in {
+  z-index: 1;
+}
+.flex-container {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.input {
+  background-color: var(--gradient-bg-color);
+  color: var(--header-txt-color);
+  border: none;
+  border-radius: 30px;
+  border-bottom: 1px solid #ddc5c5;
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+  &::placeholder {
+    color: var(--header-txt-color);
+  }
+}
+.label {
+}
+.sign-up__close,
+.sign-in__close {
+  position: absolute;
+  top: 5px;
+  right: 40px;
+
+  padding: 1px;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+.form-button {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 30px;
+  color: var(--header-txt-color);
+  background-color: var(--gradient-bg-color);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #000000;
+    background-color: var(--active-btn-color);
+    border: 1px solid var(--active-btn-color);
+    box-shadow: (0px 8px 43px rgba(255, 107, 1, 0.6));
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.close-symbol {
+  border-radius: 50%;
+  cursor: pointer;
+  fill: #ffffff;
+  stroke: #000000;
+  background-color: var(--active-btn-color);
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+    background-color: #000000;
+    stroke: var(--active-btn-color);
+    fill: var(--active-btn-color);
+    box-shadow: (0px 8px 43px rgba(255, 107, 1, 0.6));
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

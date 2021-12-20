@@ -1,0 +1,18 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './base/common';
+@import './base/container';
+
+@import './components/card';
+@import './components/spinner';
+@import './components/button-to-top';
+@import './components/light-dark-theme.scss';
+
+@import './layout/header';
+@import './layout/authentication-nav';
+@import './layout/gallery';
+@import './layout/footer';
+
+@import './components/card-modal';
+@import './components/modal_footer';
+@import './components/modal-auth-form';
